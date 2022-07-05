@@ -7,21 +7,18 @@ Args:
     c: Third number.
 Returns:
     int: return answer.
+    
 */
 int func(int a, int b, int c) {
-  int ans = 0;
+  int x = 0;
   if (a > b && a > c) {
-    ans = a;
+    return a;
+  } else if (b > a && b > c) {
+    return b;
   }
-  if (b > a && b > c) {
-    ans = b;
-  }
-  if (c > a && c > b) {
-    ans = c;
-  }
-  return ans;
+  return c;
 }
 
 void main() {
-  print(func(6, 4, 8));
+  print(func(7, 9, 11));
 }
